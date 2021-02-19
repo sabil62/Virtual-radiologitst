@@ -30,6 +30,12 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- audio load -->
+    <script>
+      window.onload = function () {
+        var context = new AudioContext();
+      };
+    </script>
     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
       rel="stylesheet"
@@ -38,6 +44,16 @@
     <title>Virtual Radiologist</title>
   </head>
   <body>
+    <!-- <iframe src=”./assets/sound/silence.mp3″ type=”audio/mp3″ allow=”autoplay” id=”audio” style="display:none"></iframe> -->
+
+    <!-- <audio controls autoplay hidden="true" id="audio">
+      <source
+        src="./assets/sound/Typewriter-Sound-Effect.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio> -->
+
     <!-- Text animation -->
     <p class="a-line animation-type-writer">Welcome to Future</p>
 
@@ -48,6 +64,22 @@
 
       <span></span>
     </div>
+
+    <script>
+      var sound = document.createElement("audio");
+      sound.id = "audio";
+      sound.controls = "controls";
+      sound.src = "./assets/sound/Typewriter-Sound-Effect.mp3";
+      sound.type = "audio/mp3";
+      sound.hidden = "true";
+      document.body.appendChild(sound);
+
+      function playAudio() {
+        document.getElementById("audio").play();
+      }
+
+      setTimeout("playAudio()", 1000);
+    </script>
 
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script
