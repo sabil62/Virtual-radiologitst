@@ -131,6 +131,59 @@
   }
 }
 
+.a-line {
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: roboto;
+  font-weight: 800;
+  font-size: 60px;
+}
+
+/* Animation */
+.animation-type-writer {
+  -webkit-animation: typewriter 4s steps(22) 1s 1 normal both, blinkTextCursor 500ms steps(22) infinite normal;
+          animation: typewriter 4s steps(22) 1s 1 normal both, blinkTextCursor 500ms steps(22) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32rem;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 32rem;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 body {
   background-color: black;
   color: wheat;
