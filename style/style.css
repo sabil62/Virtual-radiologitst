@@ -138,6 +138,7 @@
   white-space: nowrap;
   overflow: hidden;
   font-family: roboto;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.384);
   font-weight: 800;
   font-size: 60px;
 }
@@ -184,8 +185,33 @@
   }
 }
 
+.top-background {
+  height: 90vh;
+  background-image: radial-gradient(at 100% 100%, #075166 5%, #023848 40%, #002433 80%);
+  background-size: cover;
+}
+
+.top-background .virtual-radio-batch {
+  padding: 1.2rem 1.6rem;
+  background-color: rgba(255, 235, 205, 0.267);
+  display: inline-block;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
+}
+
+.top-background .f-icons {
+  padding-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.top-background .f-icons i {
+  margin: 0 0.8rem;
+}
+
 body {
-  background-color: black;
+  background-color: aliceblue;
   color: wheat;
 }
 

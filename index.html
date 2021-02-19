@@ -30,12 +30,12 @@
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <!-- audio load -->
-    <script>
-      window.onload = function () {
-        var context = new AudioContext();
-      };
-    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
       rel="stylesheet"
@@ -44,26 +44,47 @@
     <title>Virtual Radiologist</title>
   </head>
   <body>
-    <!-- <iframe src=”./assets/sound/silence.mp3″ type=”audio/mp3″ allow=”autoplay” id=”audio” style="display:none"></iframe> -->
+    <!-- ---------------------------top------------------------------ -->
+    <section class="top-background">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="virtual-radio-batch">VIRTUAL RADIOLOGIST</div>
+          </div>
+          <div
+            class="col-lg-6 f-icons"
+            style="display: flex; justify-content: flex-end"
+          >
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github-alt"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+      <div style="height: 40vh"></div>
 
-    <!-- <audio controls autoplay hidden="true" id="audio">
-      <source
-        src="./assets/sound/Typewriter-Sound-Effect.mp3"
-        type="audio/mpeg"
-      />
-      Your browser does not support the audio element.
-    </audio> -->
-
-    <!-- Text animation -->
-    <p class="a-line animation-type-writer">Welcome to Future</p>
-
-    <!-- --------------------------------------------------------- -->
-    <div class="scanner">
-      <em></em>
-      <img src="./assets/face/scan head.png" alt="" style="height: 300px" />
-
-      <span></span>
-    </div>
+      <div class="col-12">
+        <div class="row">
+          <div class="col-lg-6 col-md-7 col-sm-12">
+            <!-- Text animation -->
+            <p class="a-line animation-type-writer">Welcome to Future</p>
+          </div>
+          <div class="col-lg-6 col-md-5 col-sm-12">
+            <!-- --------------------------------------------------------- -->
+            <div class="scanner">
+              <em></em>
+              <img
+                src="./assets/face/scan head.png"
+                alt=""
+                style="height: 300px"
+              />
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script>
       var sound = document.createElement("audio");
