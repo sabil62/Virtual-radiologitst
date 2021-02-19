@@ -1,0 +1,24 @@
+.anothertest {
+  height: 1px;
+  width: 2px;
+}
+
+.lion {
+  height: 11px;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../../assets/font/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf");
+  font-weight: 400;
+}
+
+body {
+  background-color: black;
+  color: wheat;
+}
+
+div {
+  font-family: "Roboto Slab", serif;
+}
+/*# sourceMappingURL=style.css.map */

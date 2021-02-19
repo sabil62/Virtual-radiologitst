@@ -1,0 +1,11 @@
+@import "./config//tester";
+@import "./config/font";
+
+body {
+  background-color: black;
+  color: wheat;
+}
+
+div {
+  font-family: "Roboto Slab", serif;
+}
