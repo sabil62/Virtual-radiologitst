@@ -56,37 +56,56 @@
     </div>
     <!-- --------------------------Choose File------------------------------- -->
     <!-- ---------------------------------------------------------change -->
-    <label class="filelabel">
-      <i class="fa fa-paperclip"> </i>
-      <span class="title"> Add File </span>
+    <div class="take-file">
+      <div>
+        <div>
+          <label class="filelabel">
+            <i class="fa fa-paperclip"> </i>
+            <span class="title"> Add X-ray </span>
 
-      <input
-        class="FileUpload1"
-        id="image-selector"
-        type="file"
-        name="booking_attachment"
-        onchange="onFileSelected(event)"
-      />
-    </label>
+            <input
+              class="FileUpload1"
+              id="image-selector"
+              type="file"
+              name="booking_attachment"
+              onchange="onFileSelected(event)"
+            />
+          </label>
+        </div>
+        <div>
+          <button class="predict-btn predict-btn-decor decor">Predict</button>
+        </div>
+      </div>
+    </div>
     <!-- <input id="image-selector" type="file" onchange="onFileSelected(event)" /> -->
     <br />
 
     <!-- <img id="selected-image" /> -->
-
-    <!-- ---------------------------------------------------------left images----------- -->
-    <div id="scanner" class="scanner" style="display: none">
-      <em></em>
-      <img
-        id="selected-image"
-        style="height: 100%; width: 100%; object-fit: cover"
-      />
-      <!-- here class name to switch off after scan -->
-      <span class="span-real-scanner"></span>
-    </div>
+    <section class="predict-image">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12">
+            <!-- ---------------------------------------------------------left images----------- -->
+            <div style="height: 350px">
+              <div id="scanner" class="scanner" style="display: none">
+                <em></em>
+                <img
+                  id="selected-image"
+                  style="height: 100%; width: 100%; object-fit: cover"
+                />
+                <!-- here class name to switch off after scan -->
+                <span class="span-real-scanner"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <span class="after-prediction-results">aa</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ---------------------------------------------------------New----------- -->
-    <div>
-      <button class="predict-btn">Predict</button>
-    </div>
+
     <!-- ---------------------------------------------------------Script -->
     <script>
       function onFileSelected(event) {

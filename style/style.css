@@ -305,6 +305,59 @@
   display: none;
 }
 
+.take-file {
+  margin-left: 45%;
+}
+
+.predict-btn-decor {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.123);
+  border-radius: 0.6em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.596);
+}
+
+.predict-btn-decor:hover, .predict-btn-decor:focus {
+  color: #f5e8cf;
+  outline: 0;
+}
+
+.decor {
+  border-radius: 3em;
+  border-color: #159279;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(21, 146, 121, 0.6)), color-stop(5%, rgba(21, 146, 121, 0.6)), color-stop(5%, #159279), color-stop(10%, #159279), color-stop(10%, rgba(21, 146, 121, 0.6)), color-stop(15%, rgba(21, 146, 121, 0.6)), color-stop(15%, #159279), color-stop(20%, #159279), color-stop(20%, rgba(21, 146, 121, 0.6)), color-stop(25%, rgba(21, 146, 121, 0.6)), color-stop(25%, #159279), color-stop(30%, #159279), color-stop(30%, rgba(21, 146, 121, 0.6)), color-stop(35%, rgba(21, 146, 121, 0.6)), color-stop(35%, #159279), color-stop(40%, #159279), color-stop(40%, rgba(21, 146, 121, 0.6)), color-stop(45%, rgba(21, 146, 121, 0.6)), color-stop(45%, #159279), color-stop(50%, #159279), color-stop(50%, rgba(21, 146, 121, 0.6)), color-stop(55%, rgba(21, 146, 121, 0.6)), color-stop(55%, #159279), color-stop(60%, #159279), color-stop(60%, rgba(21, 146, 121, 0.6)), color-stop(65%, rgba(21, 146, 121, 0.6)), color-stop(65%, #159279), color-stop(70%, #159279), color-stop(70%, rgba(21, 146, 121, 0.6)), color-stop(75%, rgba(21, 146, 121, 0.6)), color-stop(75%, #159279), color-stop(80%, #159279), color-stop(80%, rgba(21, 146, 121, 0.6)), color-stop(85%, rgba(21, 146, 121, 0.6)), color-stop(85%, #159279), color-stop(90%, #159279), color-stop(90%, rgba(21, 146, 121, 0.6)), color-stop(95%, rgba(21, 146, 121, 0.6)), color-stop(95%, #159279), to(#159279));
+  background-image: linear-gradient(to right, rgba(21, 146, 121, 0.6), rgba(21, 146, 121, 0.6) 5%, #159279 5%, #159279 10%, rgba(21, 146, 121, 0.6) 10%, rgba(21, 146, 121, 0.6) 15%, #159279 15%, #159279 20%, rgba(21, 146, 121, 0.6) 20%, rgba(21, 146, 121, 0.6) 25%, #159279 25%, #159279 30%, rgba(21, 146, 121, 0.6) 30%, rgba(21, 146, 121, 0.6) 35%, #159279 35%, #159279 40%, rgba(21, 146, 121, 0.6) 40%, rgba(21, 146, 121, 0.6) 45%, #159279 45%, #159279 50%, rgba(21, 146, 121, 0.6) 50%, rgba(21, 146, 121, 0.6) 55%, #159279 55%, #159279 60%, rgba(21, 146, 121, 0.6) 60%, rgba(21, 146, 121, 0.6) 65%, #159279 65%, #159279 70%, rgba(21, 146, 121, 0.6) 70%, rgba(21, 146, 121, 0.6) 75%, #159279 75%, #159279 80%, rgba(21, 146, 121, 0.6) 80%, rgba(21, 146, 121, 0.6) 85%, #159279 85%, #159279 90%, rgba(21, 146, 121, 0.6) 90%, rgba(21, 146, 121, 0.6) 95%, #159279 95%, #159279 100%);
+  background-position: 0 0;
+  background-size: 100%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+.decor:hover {
+  background-position: 100px;
+}
+
 body {
   background-color: aliceblue;
   font-family: "Roboto Slab", serif;
