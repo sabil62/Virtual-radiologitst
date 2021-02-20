@@ -37,3 +37,8 @@ $("#image-selector").on("change", function (e) {
     $(".filelabel .title").text(labelVal);
   }
 });
+
+$(".tuberculosis").hide();
+$(".congratulations").hide();
+$(".pnemonia").hide();
+$(".brain-tumor").hide();

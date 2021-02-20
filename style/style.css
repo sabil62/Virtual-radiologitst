@@ -358,6 +358,34 @@
   background-position: 100px;
 }
 
+.after-prediction-results {
+  padding: 2rem 0.6rem;
+}
+
+.after-prediction-results span {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.after-prediction-results .congratulations {
+  font-size: 2.4rem;
+}
+
+.after-prediction-results .tuberculosis {
+  font-size: 1.2rem;
+}
+
+.after-prediction-results .pnemonia {
+  font-size: 1.2rem;
+}
+
+.after-prediction-results .brain-tumor {
+  font-size: 1.2rem;
+}
+
+.after-prediction-results inside {
+  font-size: 1.6rem;
+}
+
 body {
   background-color: aliceblue;
   font-family: "Roboto Slab", serif;
