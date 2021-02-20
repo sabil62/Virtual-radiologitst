@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <!-- --------------------------------------------------------- -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- --------------------------------------------------------- -->
+    <title>Predict</title>
+  </head>
+  <body>
+    <img id="img" src="trial.png" width="200" />
+    <br />
+
+    <p id="model-status"></p>
+    <div
+      class="progress progress-bar progress-bar-striped progress-bar-animated mb-2"
+    >
+      Loading Model
+    </div>
+    <!-- ---------------------------------------------------------change -->
+    <input id="image-selector" type="file" onchange="onFileSelected(event)" />
+    <br />
+
+    <!-- <img id="selected-image" /> -->
+
+    <!-- ---------------------------------------------------------left images----------- -->
+    <div id="scanner" class="scanner" style="display: none">
+      <em></em>
+      <img
+        id="selected-image"
+        style="height: 100%; width: 100%; object-fit: cover"
+      />
+      <!-- here class name to switch off after scan -->
+      <span class="span-real-scanner"></span>
+    </div>
+    <!-- ---------------------------------------------------------New----------- -->
+    <div>
+      <button class="predict-btn">Predict</button>
+    </div>
+    <!-- ---------------------------------------------------------Script -->
+    <script>
+      function onFileSelected(event) {
+        //for scanner
+        var scannner = document.getElementById("scanner");
+        scanner.style.display = "block";
+
+        var selectedFile = event.target.files[0];
+        var reader = new FileReader();
+
+        var imgtag = document.getElementById("selected-image");
+        imgtag.title = selectedFile.name;
+
+        reader.onload = function (event) {
+          imgtag.src = event.target.result;
+        };
+
+        reader.readAsDataURL(selectedFile);
+        setTimeout(stopScan, 3000);
+      }
+      function stopScan() {
+        let stopScan = document.getElementsByClassName("span-real-scanner");
+        //stopScan is array as there are many classes
+        //so use the first one
+        stopScan[0].style.display = "none";
+        // alert("lion");
+      }
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>
