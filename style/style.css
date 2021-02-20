@@ -189,6 +189,9 @@
   height: 90vh;
   background-image: radial-gradient(at 100% 100%, #075166 5%, #023848 40%, #002433 80%);
   background-size: cover;
+  -webkit-clip-path: ellipse(100% 55% at 48% 44%);
+          clip-path: ellipse(100% 55% at 48% 44%);
+  color: wheat;
 }
 
 .top-background .virtual-radio-batch {
@@ -210,12 +213,23 @@
   margin: 0 0.8rem;
 }
 
-body {
-  background-color: aliceblue;
-  color: wheat;
+.footer-first {
+  background-color: #064e62;
+  padding: 5rem 0;
+  margin: 3rem 0 0 0;
+  color: #f8f3e8;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.459);
 }
 
-div {
+.footer-second {
+  background-color: #06363a;
+  padding: 2rem 0;
+  color: #eaebe6;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.459);
+}
+
+body {
+  background-color: aliceblue;
   font-family: "Roboto Slab", serif;
 }
 /*# sourceMappingURL=style.css.map */
