@@ -10,6 +10,17 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
     <!-- --------------------------------------------------------- -->
@@ -18,8 +29,24 @@
     <title>Predict</title>
   </head>
   <body>
-    <img id="img" src="trial.png" width="200" />
-    <br />
+    <!-- <img id="img" src="trial.png" width="200" />
+    <br /> -->
+    <header class="navigation-bar">
+      <div class="container">
+        <div class="flexter">
+          <span class="virtual-radio"> VIRTUAL RADIOLOGIST</span>
+          <div class="f-iconss">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github-alt"></i>
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- --------------------------Modal loading------------------------------- -->
+
+    <div style="height: 70px"></div>
 
     <p id="model-status"></p>
     <div
@@ -27,8 +54,21 @@
     >
       Loading Model
     </div>
+    <!-- --------------------------Choose File------------------------------- -->
     <!-- ---------------------------------------------------------change -->
-    <input id="image-selector" type="file" onchange="onFileSelected(event)" />
+    <label class="filelabel">
+      <i class="fa fa-paperclip"> </i>
+      <span class="title"> Add File </span>
+
+      <input
+        class="FileUpload1"
+        id="image-selector"
+        type="file"
+        name="booking_attachment"
+        onchange="onFileSelected(event)"
+      />
+    </label>
+    <!-- <input id="image-selector" type="file" onchange="onFileSelected(event)" /> -->
     <br />
 
     <!-- <img id="selected-image" /> -->
@@ -65,6 +105,7 @@
         };
 
         reader.readAsDataURL(selectedFile);
+        //this to stop scan after 3sec
         setTimeout(stopScan, 3000);
       }
       function stopScan() {
@@ -92,6 +133,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- <script src="./script.js"></script> -->
+    <script src="./script.js"></script>
   </body>
 </html>

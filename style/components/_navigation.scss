@@ -1,0 +1,61 @@
+.navigation-bar {
+  width: 100%;
+  height: 56px;
+  background-image: radial-gradient(at 100% 80%, #064c60, #002433);
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: wheat;
+  .flexter {
+    display: flex;
+    justify-content: space-between;
+  }
+  .virtual-radio {
+    padding: 1rem 1.2rem 0.7rem 1.2rem;
+    background-color: rgba(255, 235, 205, 0.267);
+    display: inline-block;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.178);
+  }
+  .f-iconss {
+    padding-top: 0.9rem;
+    font-size: 1.2rem;
+    i {
+      margin: 0 0.8rem;
+    }
+  }
+}
+//choose files
+.filelabel {
+  width: 120px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  display: block;
+  padding: 5px;
+  transition: border 300ms ease;
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+}
+.filelabel i {
+  display: block;
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+.filelabel i,
+.filelabel .title {
+  color: grey;
+  transition: 200ms color;
+}
+.filelabel:hover {
+  border: 2px solid #1665c4;
+}
+.filelabel:hover i,
+.filelabel:hover .title {
+  color: #1665c4;
+}
+#image-selector {
+  display: none;
+}
