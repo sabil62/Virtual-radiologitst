@@ -42,3 +42,7 @@ $(".tuberculosis").hide();
 $(".congratulations").hide();
 $(".pnemonia").hide();
 $(".brain-tumor").hide();
+
+function gotopredict() {
+  window.location.href = "./predict.html";
+}
