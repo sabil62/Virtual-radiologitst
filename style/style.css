@@ -228,6 +228,122 @@
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.459);
 }
 
+.go-to-detect {
+  margin: 6rem 0;
+  padding: 8rem 0;
+  background-color: #e8f2ee;
+}
+
+.go-to-detect .inside-go .xray-image {
+  height: 270px;
+  margin-left: 2rem;
+}
+
+.go-to-detect .try {
+  font-size: 2.3rem;
+  padding: 1rem 0 1.1rem 0;
+}
+
+.go-to-detect .virtual-explain {
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.6px;
+  color: rgba(0, 0, 0, 0.438);
+  text-align: start;
+}
+
+.buttons {
+  margin: 1.5rem 0;
+  padding: 0.78rem 1.7rem;
+  border-radius: 2rem;
+  font-size: 1.05rem;
+  outline: none;
+  color: #f8e9cd;
+  border: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-image: radial-gradient(at 100% 100%, #075166 5%, #023848 80%);
+}
+
+.buttons:hover {
+  background-image: radial-gradient(at 100% 100%, #097fa0 5%, #077292 80%);
+}
+
+.buttons:focus {
+  outline: none;
+}
+
+.all-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.how-it-works {
+  margin: 8rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.circle {
+  height: 170px;
+  width: 170px;
+  border-radius: 100%;
+  background-color: #ffd05b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.circle-img {
+  height: 93px;
+}
+
+.our-mission {
+  margin: 6rem 0;
+  padding: 8rem 0;
+  background-color: #e8f2ee;
+}
+
+.our-mission .objective-img .in-img {
+  height: 280px;
+  margin-left: 2rem;
+}
+
+.our-mission .bolder {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 1rem 0 1.1rem 0;
+}
+
+.our-mission .objectives {
+  font-weight: 400;
+  font-size: 0.8rem;
+  letter-spacing: 0.6px;
+  color: rgba(0, 0, 0, 0.438);
+  text-align: start;
+}
+
 .navigation-bar {
   width: 100%;
   height: 56px;

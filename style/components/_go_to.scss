@@ -1,0 +1,41 @@
+.go-to-detect {
+  margin: 6rem 0;
+  padding: 8rem 0;
+  background-color: #e8f2ee;
+  .inside-go {
+    .xray-image {
+      height: 270px;
+      margin-left: 2rem;
+    }
+  }
+  .try {
+    font-size: 2.3rem;
+    padding: 1rem 0 1.1rem 0;
+  }
+  .virtual-explain {
+    font-weight: 400;
+    font-size: 0.8rem;
+    letter-spacing: 0.6px;
+    color: rgba(0, 0, 0, 0.438);
+    text-align: start;
+  }
+}
+.buttons {
+  margin: 1.5rem 0;
+  padding: 0.78rem 1.7rem;
+  border-radius: 2rem;
+  font-size: 1.05rem;
+  outline: none;
+  color: rgb(248, 233, 205);
+  border: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-image: radial-gradient(at 100% 100%, #075166 5%, #023848 80%);
+  &:hover {
+    background-image: radial-gradient(at 100% 100%, #097fa0 5%, #077292 80%);
+  }
+  &:focus {
+    outline: none;
+  }
+}

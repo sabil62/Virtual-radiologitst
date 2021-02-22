@@ -1,0 +1,27 @@
+.all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+.how-it-works {
+  margin: 8rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.circle {
+  height: 170px;
+  width: 170px;
+  border-radius: 100%;
+  background-color: #ffd05b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  &-img {
+    height: 93px;
+  }
+}
