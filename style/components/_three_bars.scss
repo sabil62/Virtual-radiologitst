@@ -1,0 +1,20 @@
+.three-bars {
+  margin: 11rem 0;
+  .three-in {
+    width: 300px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    // background-color: #7fdda8;
+    background-image: radial-gradient(at 100% 100%, #075166 5%, #023848 70%);
+    border: 1px solid rgba(0, 128, 0, 0.089);
+
+    color: wheat;
+    text-shadow: 1px 1px 10px rgba(34, 21, 21, 0);
+    font-weight: 600;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.205);
+  }
+}

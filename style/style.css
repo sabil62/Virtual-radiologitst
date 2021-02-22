@@ -344,6 +344,58 @@
   text-align: start;
 }
 
+.three-bars {
+  margin: 11rem 0;
+}
+
+.three-bars .three-in {
+  width: 300px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 2rem;
+  background-image: radial-gradient(at 100% 100%, #075166 5%, #023848 70%);
+  border: 1px solid rgba(0, 128, 0, 0.089);
+  color: wheat;
+  text-shadow: 1px 1px 10px rgba(34, 21, 21, 0);
+  font-weight: 600;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.205);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.205);
+}
+
+.try-out-model {
+  margin: 7rem;
+}
+
+.try-out-model .mid-try-out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.try-out-model .mid-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 .navigation-bar {
   width: 100%;
   height: 56px;
